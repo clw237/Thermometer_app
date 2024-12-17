@@ -40,7 +40,7 @@ To run the 7 unit tests created within the test_thermometer.py file, execute:
 
 The following example demonstrates how to use the thermometer application:
 
-1. Define thresholds: for example - freezing point (0°C) or boiling point (212°F)
+1. Define thresholds: for example, here is freezing point (0°C) from above and with 0.5 tolerance.
     ```bash
     freezing_threshold = Threshold(
         name="Freezing Point",
