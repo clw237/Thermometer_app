@@ -42,7 +42,13 @@ The following example demonstrates how to use the thermometer application:
 
 1. Define thresholds: for example - freezing point (0°C) or boiling point (212°F)
     ```bash
-    freezing_threshold = Threshold(name="Freezing Point", value=0.0, unit="C", direction="above", tolerance=0.5)
+    freezing_threshold = Threshold(
+        name="Freezing Point",
+        value=0.0,
+        unit="C",
+        direction="above",
+        tolerance=0.5
+    )
     thermometer.add_threshold(freezing_threshold)
     ```
 - Included with the thresholds is the option to define a tolerance (for example: ignore temp variations of 0.5 or less, to reduce notifications)
