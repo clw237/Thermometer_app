@@ -1,0 +1,4 @@
+# requirements.txt
+
+# Currently, there are no external dependencies for this project.
+# Add any required packages below when needed.
