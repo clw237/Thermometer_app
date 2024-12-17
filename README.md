@@ -23,18 +23,18 @@ To run this project, ensure you have Python installed on your machine. Follow th
 1. Clone the repository or download the source files.
 2. Navigate to the project directory.
 3. (Optional) Create a virtual environment
-4. Install any required packages (if applicable - I did use pytest for unit testing within the project).
+4. Install any required packages (I did not use any non-standard Python libraries).
 
 ## Usage
 
-To run the thermometer application, execute the `main.py` file:
-    ```bash
-    python src/main.py
-    ```
+To run the thermometer application, execute the main.py file:
+  ```bash
+  python src/main.py
+  ```
 To run the 7 unit tests created within the test_thermometer.py file, execute:
-    ```bash
-    export PYTHONPATH=src && python -m unittest discover -s tests
-    ```
+  ```bash
+  export PYTHONPATH=src && python -m unittest discover -s tests
+  ```
 
 ### Example
 
