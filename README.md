@@ -40,7 +40,7 @@ To run the 7 unit tests created within the test_thermometer.py file, execute:
 
 The following example demonstrates how to use the thermometer application:
 
-1. Define thresholds for example - freezing point (0°C) or boiling point (212°F)
+1. Define thresholds: for example - freezing point (0°C) or boiling point (212°F)
     ```bash
     freezing_threshold = Threshold(name="Freezing Point", value=0.0, unit="C", direction="above", tolerance=0.5)
     thermometer.add_threshold(freezing_threshold)
@@ -49,7 +49,15 @@ The following example demonstrates how to use the thermometer application:
 - Also included in the threshold is an optional field for a direction, meaning was the temperative approaching the threshold from above or below.
 2. Simulate temperature readings in Celsius or Fahrenheit.
     ```bash
-    temperature_readings = [(1.0, 'C'), (0.0, 'C'), (-2.0, 'C'), (0.0, 'C'), (0.2, 'C'), (0.0, 'C')]
+    # Simulate temperature readings
+    temperature_readings = [
+        (1.0, 'C'), 
+        (0.0, 'C'), 
+        (-2.0, 'C'), 
+        (0.0, 'C'), 
+        (0.2, 'C'), 
+        (0.0, 'C')
+    ]
     ```
 3. The application will notify you when thresholds are reached, according to your defined parameters.
     ```bash
@@ -64,9 +72,10 @@ The following example demonstrates how to use the thermometer application:
     print(str(results))
     ```
 Here is what the terminal output will be:
-
+```bash
 Starting temperature readings... [(1.0, 'C'), (0.0, 'C'), (-2.0, 'C'), (0.0, 'C'), (0.2, 'C'), (0.0, 'C')]
 ["Threshold 'Freezing Point' (0.00°C with a tolerance of 0.5) reached from above at index: 1."]
+```
 
 
 ## Classes Overview

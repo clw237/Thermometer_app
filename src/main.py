@@ -25,7 +25,14 @@ def main():
     thermometer.add_threshold(random_threshold)
 
     # Simulate temperature readings
-    temperature_readings = [(1.0, 'C'), (0.0, 'C'), (-2.0, 'C'), (0.0, 'C'), (0.2, 'C'), (0.0, 'C')]
+    temperature_readings = [
+        (1.0, 'C'), 
+        (0.0, 'C'), 
+        (-2.0, 'C'), 
+        (0.0, 'C'), 
+        (0.2, 'C'), 
+        (0.0, 'C')
+    ]
 
     results = []
     print("Starting temperature readings... " + str(temperature_readings))
